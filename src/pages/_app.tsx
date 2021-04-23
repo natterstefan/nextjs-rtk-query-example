@@ -3,6 +3,9 @@ import Head from 'next/head'
 import { AppProps } from 'next/app'
 import { CookiesProvider } from 'react-cookie'
 import { appWithTranslation } from 'next-i18next'
+import { Provider } from 'react-redux'
+
+import { store } from '../store'
 
 import '../styles/index.scss'
 
@@ -27,9 +30,11 @@ function App({ Component, pageProps }: AppProps) {
         />
       </Head>
       <CookiesProvider>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        <Provider store={store}>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </Provider>
       </CookiesProvider>
     </>
   )
