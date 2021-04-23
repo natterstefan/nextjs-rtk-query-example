@@ -17,8 +17,9 @@ export const jokeApi = createApi({
   reducerPath: 'jokeApi',
   baseQuery: fetchBaseQuery({ baseUrl: 'https://v2.jokeapi.dev/' }),
   endpoints: builder => ({
-    getRandomJoke: builder.query<RandomJokeResponse, undefined>({
-      query: () => `joke/Any`,
+    getRandomJoke: builder.query<RandomJokeResponse, void>({
+      query: () =>
+        `joke/Programming?blacklistFlags=explicit,nsfw,political,racist,religious,sexist`,
     }),
   }),
 })
