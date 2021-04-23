@@ -11,6 +11,15 @@
   "commitConvention": "eslint",
   "contributors": [
     {
+      "login": "barnabasJ",
+      "name": "Barnabas Jovanovics",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11669837?v=4",
+      "profile": "https://github.com/barnabasJ",
+      "contributions": [
+        "ideas"
+      ]
+    },
+     {
       "login": "natterstefan",
       "name": "Stefan Natter",
       "avatar_url": "https://avatars.githubusercontent.com/u/1043668?v=4",

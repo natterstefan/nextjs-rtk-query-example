@@ -33,7 +33,6 @@ COPY next.config.js postcss.config.js tailwind.config.js ./
 # source code of the app
 COPY public ./public/
 COPY src ./src/
-COPY version.js ./
 
 # build the bundles (codegen -> ts -> js -> bundled)
 RUN yarn build
@@ -61,7 +60,6 @@ COPY --from=builder /app/next-i18next.config.js ./
 COPY --from=builder /app/next.config.js ./
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next ./.next
-COPY --from=builder /app/version.js ./
 
 RUN addgroup -g 1001 -S nodejs
 RUN adduser -S nextjs -u 1001

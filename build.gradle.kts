@@ -48,12 +48,6 @@ val dev by tasks.creating {
                 "yarn"
             )
         }
-        exec {
-            commandLine(
-                "yarn",
-                "setup"
-            )
-        }
     }
 }
 
@@ -75,7 +69,6 @@ with(lovely.dockerFiles) {
             "postcss.config.js",
             "tailwind.config.js",
             "tsconfig.json",
-            "version.js",
             "yarn.lock"
         )
 
