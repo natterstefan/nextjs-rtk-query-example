@@ -4,10 +4,6 @@
 type NextConfig = {
   publicRuntimeConfig: {
     NODE_ENV: string
-    /**
-     * version of the app
-     */
-    VERSION: string
   }
   serverRuntimeConfig: Record<string, unknown>
 }
