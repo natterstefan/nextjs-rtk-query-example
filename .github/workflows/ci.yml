@@ -5,6 +5,7 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
+    if: "! contains(github.event.head_commit.message, '[skip ci]')"
     steps:
       - uses: actions/checkout@v2
         with:
@@ -12,6 +13,10 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 14
+      - uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: natterstefan-rtk-query-example-${{ hashFiles('**/yarn.lock') }}
       - run: yarn
       - run: yarn lint
       - run: yarn test
