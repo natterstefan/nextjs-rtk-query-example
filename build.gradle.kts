@@ -48,12 +48,6 @@ val dev by tasks.creating {
                 "yarn"
             )
         }
-        exec {
-            commandLine(
-                "yarn",
-                "setup"
-            )
-        }
     }
 }
 

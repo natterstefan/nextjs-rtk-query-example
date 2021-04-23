@@ -29,7 +29,7 @@ const IndexPage: NextPageType = () => {
         <Page.Content>
           <div className="flex flex-col items-center justify-center h-screen px-6 space-y-12 font-medium">
             <div>
-              <h1 className="text-2xl text-center">
+              <h1 className="text-2xl text-center" data-cy="title">
                 <span aria-label="Clown" role="img">
                   🤡
                 </span>{' '}
