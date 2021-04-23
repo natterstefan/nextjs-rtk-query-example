@@ -1,0 +1,18 @@
+name: Node CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14
+      - run: ./gradlew --console=plain dev
+      - run: ./gradlew --console=plain writeVersion
+      - run: yarn lint
+      - run: yarn test

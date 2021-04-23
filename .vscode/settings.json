@@ -1,0 +1,128 @@
+{
+  /**
+  * Disable CSS validation in VS Code, to allow @tailwind import and the @apply
+  * syntax in VS Code.
+  *
+  * Enable stylelint to ensure CSS is still validated though.
+  *
+  * Docs:
+  * - @see https://stackoverflow.com/a/62093553/1238150
+  * - @see https://github.com/microsoft/vscode/issues/103163#issuecomment-672272020
+  * - @see https://www.meidev.co/blog/visual-studio-code-css-linting-with-tailwind/
+  */
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.enable": true,
+  /**
+  * LINTING & FORMATTING
+  */
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+  },
+  "eslint.validate": [
+    "graphql",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.options": {
+    "extentions": [
+      ".d.ts",
+      ".gql",
+      ".graphql",
+      ".js",
+      ".jsx",
+      ".ts",
+      ".tsx"
+    ]
+  },
+  /**
+  * EDITOR UX
+  */
+  "editor.rulers": [
+    80,
+  ],
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "files.eol": "\n",
+  /**
+  * PLUGINS SETUP
+  */
+  "todohighlight.keywords": [
+    // inspired by: https://github.com/wayou/vscode-todo-highlight/issues/93#issuecomment-390368341
+    {
+      "text": "NOTE:",
+      "color": "#ecf0f1",
+      "border": "1px solid #2980b9",
+      "borderRadius": "4px",
+      "backgroundColor": "#3498db",
+    },
+    {
+      "text": "HACK:",
+      "color": "#ecf0f1",
+      "border": "1px solid #8e44ad",
+      "borderRadius": "4px",
+      "backgroundColor": "#9b59b6",
+    },
+    {
+      "text": "XXX",
+      "color": "#ecf0f1",
+      "border": "1px solid #f39c12",
+      "borderRadius": "4px",
+      "backgroundColor": "#f1c40f",
+    },
+    {
+      "text": "FIXME:",
+      "color": "#ecf0f1",
+      "border": "1px solid #f39c12",
+      "borderRadius": "4px",
+      "backgroundColor": "#f1c40f",
+    },
+    {
+      "text": "ATTENTION:",
+      "color": "#ecf0f1",
+      "border": "1px solid #c0392b",
+      "borderRadius": "4px",
+      "backgroundColor": "#e74c3c",
+    },
+    {
+      "text": "BUG:",
+      "color": "#ecf0f1",
+      "border": "1px solid #c0392b",
+      "borderRadius": "4px",
+      "backgroundColor": "#e74c3c",
+    }
+  ],
+  /**
+  * TYPESCRIPT SETTINGS
+  */
+  "typescript.implementationsCodeLens.enabled": true,
+  "typescript.referencesCodeLens.enabled": true,
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  /**
+  * Peacock for Visual Studio Code
+  *
+  * Change the color of the workspace to quickly identify template repositories.
+  * @see https://www.peacockcode.dev/guide/#overview
+  */
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#2f7c47",
+    "activityBar.activeBorder": "#422c74",
+    "activityBar.background": "#2f7c47",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#422c74",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "statusBar.background": "#215732",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#2f7c47",
+    "titleBar.activeBackground": "#215732",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#21573299",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#215732",
+}
