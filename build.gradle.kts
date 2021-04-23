@@ -68,7 +68,7 @@ with(lovely.dockerFiles) {
             "package.json",
             "postcss.config.js",
             "tailwind.config.js",
-            "tsconfig.json"
+            "tsconfig.json",
             "yarn.lock"
         )
 
