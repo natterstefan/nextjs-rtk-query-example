@@ -6,6 +6,8 @@
 [![GitHub license](https://img.shields.io/github/license/natterstefan/nextjs-rtk-query-example)](https://github.com/natterstefan/nextjs-rtk-query-example/blob/main/LICENSE)
 [![nextjs](https://img.shields.io/badge/nextjs-built%20with%20typescript-informational.svg?logo=typescript&logoWidth=20)](https://github.com/natterstefan/nextjs-rtk-query-example)
 
+![[natterstefan/nextjs-template](https://github.com/natterstefan/nextjs-rtk-query-example)](./assets/screenshot.png)
+
 Next.js with rtk-query example.
 
 ## Installation & Setup
